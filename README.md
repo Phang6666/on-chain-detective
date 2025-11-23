@@ -3,6 +3,8 @@
 ### 1. Project Overview
 I built this live dashboard to monitor high-value transactions and operational costs on the Ethereum network. The goal was to translate raw blockchain data into actionable insights for trading or product teams.
 
+![On-Chain Detective Dashboard](dashboard.png)
+
 **[👉 Click Here to View Live Dashboard](https://dune.com/jet6666/crypto-market-activity-monitor)**
 
 ### 2. Business Questions Answered
@@ -22,9 +24,7 @@ I built this live dashboard to monitor high-value transactions and operational c
 ```sql
 -- Example: calculating gas costs
 SELECT
-    -- Formatting time to "HH:MM"
     date_format(date_trunc('hour', block_time), '%H:%i') as hour_label,
-    -- converting to decimal to avoid math errors
     SUM(cast(gas_used as double) * cast(gas_price as double)) / 1e18 as cost
 FROM ethereum.transactions
 GROUP BY 1, date_trunc('hour', block_time)
