@@ -22,7 +22,9 @@ I built this live dashboard to monitor high-value transactions and operational c
 ```sql
 -- Example: calculating gas costs
 SELECT
-    date_trunc('hour', block_time) as hour,
-    SUM(gas_used * effective_gas_price) / 1e18 as cost
+    -- Formatting time to "HH:MM"
+    date_format(date_trunc('hour', block_time), '%H:%i') as hour_label,
+    -- converting to decimal to avoid math errors
+    SUM(cast(gas_used as double) * cast(gas_price as double)) / 1e18 as cost
 FROM ethereum.transactions
-GROUP BY 1
+GROUP BY 1, date_trunc('hour', block_time)
