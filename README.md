@@ -16,7 +16,7 @@ I built this live dashboard to monitor high-value transactions and operational c
 * **Data Structures:**
     * `erc20_ethereum.evt_Transfer`: Used to track token movements.
     * `ethereum.transactions`: Used to calculate gas consumption (Revenue/Cost).
-* **Key SQL Concepts Used:** Aggregations (`SUM`, `COUNT`), Time-series grouping (`date_trunc`), and Data Normalization.
+* **Key SQL Concepts Used:** Aggregations (`SUM`, `COUNT`), Time-series grouping (`date_trunc`), and Data Normalization (adjusting for 18 decimal places).
 
 ### 4. Sample SQL Code
 *See the /queries folder for full code.*
