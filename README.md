@@ -3,7 +3,7 @@
 ### 1. Project Overview
 As a Business Analyst aspirant, I built this live dashboard to monitor high-value transactions and operational costs on the Ethereum network. The goal was to translate raw blockchain data into actionable insights for trading or product teams.
 
-**[👉 Click Here to View Live Dashboard](PASTE_YOUR_DUNE_LINK_HERE)**
+**[👉 Click Here to View Live Dashboard](https://dune.com/jet6666/crypto-market-activity-monitor)**
 
 ### 2. Business Questions Answered
 * **Customer Segmentation:** Who are the high-net-worth individuals ("Whales") accumulating PEPE tokens right now?
