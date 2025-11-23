@@ -1,7 +1,7 @@
 # On-Chain Detective: Market & Cost Analysis
 
 ### 1. Project Overview
-As a Business Analyst aspirant, I built this live dashboard to monitor high-value transactions and operational costs on the Ethereum network. The goal was to translate raw blockchain data into actionable insights for trading or product teams.
+I built this live dashboard to monitor high-value transactions and operational costs on the Ethereum network. The goal was to translate raw blockchain data into actionable insights for trading or product teams.
 
 **[👉 Click Here to View Live Dashboard](https://dune.com/jet6666/crypto-market-activity-monitor)**
 
